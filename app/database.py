@@ -23,7 +23,6 @@ def get_db():
     finally:
         db.close()
 
-
 """
 ---- First try using psycopg2 connection
 ---- Was replaced by SQLAlchemy connection
