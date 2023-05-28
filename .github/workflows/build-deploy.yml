@@ -1,0 +1,19 @@
+name: Build and Deploy code
+
+on:
+  push:
+    branches:
+      - "main"
+  pull_request:
+    branches:
+      - "sandbox"
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    setps:
+      - name: pulling git repo
+        uses: actions/checkout@v2
+      - name: say hi to Diogo
+        run: echo "hello Diogo"
+      
