@@ -10,10 +10,12 @@ on:
 
 jobs:
   job1:
+    environment:
+      name: testing
     env:
-      DATABASE_HOSTNAME: localhost
+      DATABASE_HOSTNAME: ${{secrets.DATABASE_HOSTNAME}}
       DATABASE_PORT: 5432
-      DATABASE_PASSWORD: admin
+      DATABASE_PASSWORD: ${{secrets.DATABASE_PASSWORD}}
       DATABASE_NAME: fastapi
       DATABASE_USERNAME: postgres
       SECRET_KEY: 8b35b78b289bf9888a06b7f7e0ab53d0da17daef9b27c92a6ddfc20993dd3fb6
