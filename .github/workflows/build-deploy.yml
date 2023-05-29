@@ -53,8 +53,10 @@ jobs:
     environment:
       name: testing
     steps:
+      - name: pulling git repo
+        uses: actions/checkout@v2
       - name: Deploy to heroku
-        uses: akhileshns/heroku-deploy@v3.12.14 # This is the action
+        uses: akhileshns/heroku-deploy@v3.12.12
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
