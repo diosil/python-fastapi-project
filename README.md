@@ -14,7 +14,7 @@ In this project I used the following tools/techniques:
 - [X] Git, GitActions
 - [X] Docker, Docker compose
 - [X] Oauth2 security
-- [X] Docker, Docker compose
+- [X] Libs: SQLAlchemy, pydantic
 
 *** Broadly speaking this were the steps I took to complete the project: ***
 - [ ] 1st steps on API creation
